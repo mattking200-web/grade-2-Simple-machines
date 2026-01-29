@@ -543,35 +543,7 @@
             transform: scale(1.02);
         }
         
-        /* Fill in the Blank */
-        .fillblank-container {
-            background: linear-gradient(135deg, #FFF0F5 0%, #FFE4E1 100%);
-            border-radius: 25px;
-            padding: 2.5rem;
-            margin: 2rem 0;
-            border: 5px solid var(--tool-red);
-        }
-        .fillblank-question {
-            margin-bottom: 1.8rem;
-            font-size: 1.3rem;
-            font-weight: 600;
-            line-height: 1.8;
-        }
-        .blank-input {
-            padding: 0.8rem 1.2rem;
-            border: 4px solid var(--sky-blue);
-            border-radius: 10px;
-            font-size: 1.2rem;
-            font-weight: 700;
-            min-width: 180px;
-            margin: 0 0.5rem;
-            transition: all 0.3s;
-        }
-        .blank-input:focus {
-            outline: none;
-            border-color: var(--gear-orange);
-            background: #FFF9E6;
-        }
+        
         
         /* Color variations for different sections */
         .card[data-section="d11"] { border-color: var(--gear-orange); }
@@ -845,32 +817,7 @@
                 </div>
 
                 <!-- Fill in the Blank -->
-                <div class="fillblank-container">
-                    <h3>✏️ Fill in the Blanks!</h3>
-                    
-                    <div class="fillblank-question">
-                        1. Simple machines make <input type="text" class="blank-input" id="d11-blank1"> easier.
-                    </div>
-                    
-                    <div class="fillblank-question">
-                        2. A door handle is a <input type="text" class="blank-input" id="d11-blank2"> and axle.
-                    </div>
-                    
-                    <div class="fillblank-question">
-                        3. <input type="text" class="blank-input" id="d11-blank3"> are inclined planes at home.
-                    </div>
-                    
-                    <div class="fillblank-question">
-                        4. People use <input type="text" class="blank-input" id="d11-blank4"> to lift heavy things.
-                    </div>
-                    
-                    <div class="fillblank-question">
-                        5. Simple machines help people in many <input type="text" class="blank-input" id="d11-blank5">.
-                    </div>
-
-                    <button class="quiz-button" onclick="checkD11FillBlanks()">✓ Check Answers</button>
-                    <div class="feedback" id="d11-fillblank-feedback"></div>
-                </div>
+                
             </div>
             <button class="back-button bottom-back-button show" onclick="showHome()">⬅ Back Home</button>
         </div>
@@ -878,9 +825,36 @@
         <div id="d12" class="page">
             <div class="card" data-section="d12">
                 <h2>🌍 D1.2: Impact on Environment</h2>
-                <p class="clickable-audio">Simple machines can help OR hurt our environment!</p>
-                <p class="clickable-audio">Wind turbines make clean energy. Bikes travel without pollution.</p>
-                <p class="clickable-audio">We can recycle and reuse. Choose clean energy!</p>
+                <p class="clickable-audio">Simple machines can help OR hurt our environment! It's important to use them wisely.</p>
+                
+                <h3>Helpful to the Environment</h3>
+                <p class="clickable-audio">Wind turbines help make clean <strong>energy</strong> from wind. <strong>Bikes</strong> help us travel without pollution. Recycling trucks help us <strong>recycle</strong> things. Every small <strong>choice</strong> helps our planet!</p>
+                
+                <div class="example-grid">
+                    <div class="example-card clickable-audio" style="border-color: var(--spring-green);">
+                        <div class="icon">🌬️</div>
+                        <h4>Wind Turbines</h4>
+                        <p>Make clean energy from wind!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--sky-blue);">
+                        <div class="icon">🚲</div>
+                        <h4>Bicycles</h4>
+                        <p>Travel without pollution!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--bolt-yellow);">
+                        <div class="icon">♻️</div>
+                        <h4>Recycling</h4>
+                        <p>Reuse materials!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--purple-pulley);">
+                        <div class="icon">☀️</div>
+                        <h4>Solar Panels</h4>
+                        <p>Clean power from sun!</p>
+                    </div>
+                </div>
+                
+                <h3>Challenges for Environment</h3>
+                <p class="clickable-audio">Some machines can create <strong>pollution</strong> when they use gas. Big trucks might make smoke. We need to make good choices!</p>
                 
                 <div class="quiz-container" id="d12-quiz">
                     <h3>🎯 Quiz Time!</h3>
@@ -917,16 +891,7 @@
                     <div class="feedback" id="d12-drag-feedback"></div>
                 </div>
 
-                <div class="fillblank-container">
-                    <h3>✏️ Fill in the Blanks!</h3>
-                    <div class="fillblank-question">1. Wind makes clean <input type="text" class="blank-input" id="d12-blank1">.</div>
-<div class="fillblank-question">2. help us travel <input type="text" class="blank-input" id="d12-blank2">.</div>
-<div class="fillblank-question">3. Some create <input type="text" class="blank-input" id="d12-blank3">.</div>
-<div class="fillblank-question">4. We should <input type="text" class="blank-input" id="d12-blank4">.</div>
-<div class="fillblank-question">5. Every helps <input type="text" class="blank-input" id="d12-blank5">.</div>
-                    <button class="quiz-button" onclick="checkD12FillBlanks()">✓ Check</button>
-                    <div class="feedback" id="d12-fillblank-feedback"></div>
-                </div>
+                
             </div>
             <button class="back-button bottom-back-button show" onclick="showHome()">⬅ Back Home</button>
         </div>
@@ -934,9 +899,38 @@
         <div id="d21" class="page">
             <div class="card" data-section="d21">
                 <h2>🚀 D2.1: How Objects Move</h2>
-                <p class="clickable-audio">Objects can move in many different ways!</p>
-                <p class="clickable-audio">Straight, zigzag, circular, back and forth, up and down!</p>
-                <p class="clickable-audio">Forces like pushes and pulls make things move!</p>
+                <p class="clickable-audio">Objects can move in many different ways! Let's explore all the ways things can move.</p>
+                
+                <h3>Types of Movement</h3>
+                <div class="example-grid">
+                    <div class="example-card clickable-audio" style="border-color: var(--gear-orange);">
+                        <div class="icon">➡️</div>
+                        <h4>Straight</h4>
+                        <p>A toy car rolling in a line!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--bolt-yellow);">
+                        <div class="icon">⚡</div>
+                        <h4>Zigzag</h4>
+                        <p>A ball bouncing down stairs!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--spring-green);">
+                        <div class="icon">⭕</div>
+                        <h4>Circular</h4>
+                        <p>Wheels spinning round!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--purple-pulley);">
+                        <div class="icon">↔️</div>
+                        <h4>Back and Forth</h4>
+                        <p>A swing moving!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--sky-blue);">
+                        <div class="icon">↕️</div>
+                        <h4>Up and Down</h4>
+                        <p>An elevator going!</p>
+                    </div>
+                </div>
+                
+                <p class="clickable-audio">A swing moves back and <strong>forth</strong>. Wheels move in a <strong>circle</strong>. An <strong>elevator</strong> goes up and down. Things move when a <strong>force</strong> (push or pull) acts on them. A ball bouncing down stairs moves in a <strong>zigzag</strong> pattern!</p>
                 
                 <div class="quiz-container" id="d21-quiz">
                     <h3>🎯 Quiz Time!</h3>
@@ -976,16 +970,7 @@
                     <div class="feedback" id="d21-drag-feedback"></div>
                 </div>
 
-                <div class="fillblank-container">
-                    <h3>✏️ Fill in the Blanks!</h3>
-                    <div class="fillblank-question">1. Swing moves back and <input type="text" class="blank-input" id="d21-blank1">.</div>
-<div class="fillblank-question">2. Wheels move in <input type="text" class="blank-input" id="d21-blank2">.</div>
-<div class="fillblank-question">3. An goes up <input type="text" class="blank-input" id="d21-blank3">.</div>
-<div class="fillblank-question">4. Things move when <input type="text" class="blank-input" id="d21-blank4">.</div>
-<div class="fillblank-question">5. Ball moves in <input type="text" class="blank-input" id="d21-blank5">.</div>
-                    <button class="quiz-button" onclick="checkD21FillBlanks()">✓ Check</button>
-                    <div class="feedback" id="d21-fillblank-feedback"></div>
-                </div>
+                
             </div>
             <button class="back-button bottom-back-button show" onclick="showHome()">⬅ Back Home</button>
         </div>
@@ -993,9 +978,38 @@
         <div id="d22" class="page">
             <div class="card" data-section="d22">
                 <h2>📍 D2.2: Changing Position</h2>
-                <p class="clickable-audio">We can change where things are in many ways!</p>
-                <p class="clickable-audio">Push moves away. Pull brings toward. Lift moves up!</p>
-                <p class="clickable-audio">Simple machines help us change position easily!</p>
+                <p class="clickable-audio">An object's position tells us where it is. We can change where things are in many different ways!</p>
+                
+                <h3>Ways to Change Position</h3>
+                <div class="example-grid">
+                    <div class="example-card clickable-audio" style="border-color: var(--gear-orange);">
+                        <div class="icon">👉</div>
+                        <h4>Pushing</h4>
+                        <p>Moves things away from you!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--bolt-yellow);">
+                        <div class="icon">👈</div>
+                        <h4>Pulling</h4>
+                        <p>Brings things toward you!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--spring-green);">
+                        <div class="icon">⬆️</div>
+                        <h4>Lifting</h4>
+                        <p>Moves things up high!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--purple-pulley);">
+                        <div class="icon">⬇️</div>
+                        <h4>Dropping</h4>
+                        <p>Gravity pulls down!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--sky-blue);">
+                        <div class="icon">🔄</div>
+                        <h4>Rolling</h4>
+                        <p>Round things turn!</p>
+                    </div>
+                </div>
+                
+                <p class="clickable-audio"><strong>Pushing</strong> moves things away from you. Pulling brings things <strong>toward</strong> you. <strong>Gravity</strong> pulls things down when you drop them. Round things like balls can <strong>roll</strong>! Simple machines help us change an object's <strong>position</strong>.</p>
                 
                 <div class="quiz-container" id="d22-quiz">
                     <h3>🎯 Quiz Time!</h3>
@@ -1036,16 +1050,7 @@
                     <div class="feedback" id="d22-drag-feedback"></div>
                 </div>
 
-                <div class="fillblank-container">
-                    <h3>✏️ Fill in the Blanks!</h3>
-                    <div class="fillblank-question">1. moves away <input type="text" class="blank-input" id="d22-blank1">.</div>
-<div class="fillblank-question">2. Pulling brings <input type="text" class="blank-input" id="d22-blank2">.</div>
-<div class="fillblank-question">3. pulls down <input type="text" class="blank-input" id="d22-blank3">.</div>
-<div class="fillblank-question">4. Round things <input type="text" class="blank-input" id="d22-blank4">.</div>
-<div class="fillblank-question">5. Simple machines help <input type="text" class="blank-input" id="d22-blank5">.</div>
-                    <button class="quiz-button" onclick="checkD22FillBlanks()">✓ Check</button>
-                    <div class="feedback" id="d22-fillblank-feedback"></div>
-                </div>
+                
             </div>
             <button class="back-button bottom-back-button show" onclick="showHome()">⬅ Back Home</button>
         </div>
@@ -1053,9 +1058,49 @@
         <div id="d23" class="page">
             <div class="card" data-section="d23">
                 <h2>⚙️ D2.3: Six Simple Machines</h2>
-                <p class="clickable-audio">There are six basic types of simple machines!</p>
-                <p class="clickable-audio">Lever, inclined plane, wedge, pulley, wheel and axle, screw!</p>
-                <p class="clickable-audio">Each machine helps us do work in a special way!</p>
+                <p class="clickable-audio">There are <strong>six</strong> basic types of simple machines. Each one helps us do work in a special way!</p>
+                
+                <h3>The Six Simple Machines</h3>
+                <div class="example-grid">
+                    <div class="example-card clickable-audio" style="border-color: var(--gear-orange);">
+                        <div class="icon">⚖️</div>
+                        <h4>1. Lever</h4>
+                        <p>Turns around a fulcrum!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--bolt-yellow);">
+                        <div class="icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="10,80 70,10 75,15 15,85" fill="#4DA8DA" stroke="#2C3E50" stroke-width="2"/>
+                                <rect x="70" y="10" width="20" height="10" fill="#FF6B35" stroke="#2C3E50" stroke-width="2"/>
+                                <rect x="0" y="85" width="30" height="5" fill="#06A77D" stroke="#2C3E50" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h4>2. Inclined Plane</h4>
+                        <p>A ramp that slopes!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--spring-green);">
+                        <div class="icon">🔺</div>
+                        <h4>3. Wedge</h4>
+                        <p>Thick and thin ends!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--purple-pulley);">
+                        <div class="icon">🔄</div>
+                        <h4>4. Pulley</h4>
+                        <p>Rope and wheel to lift!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--sky-blue);">
+                        <div class="icon">🎡</div>
+                        <h4>5. Wheel and Axle</h4>
+                        <p>Wheel on a rod!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--tool-red);">
+                        <div class="icon">🔩</div>
+                        <h4>6. Screw</h4>
+                        <p>Ramp wrapped around!</p>
+                    </div>
+                </div>
+                
+                <p class="clickable-audio">A <strong>ramp</strong> is also called an <strong>inclined</strong> plane. A <strong>pulley</strong> uses a rope and wheel. A lever turns around a point called a <strong>fulcrum</strong>. A <strong>wedge</strong> is thick on one end and thin on the other!</p>
                 
                 <div class="quiz-container" id="d23-quiz">
                     <h3>🎯 Quiz Time!</h3>
@@ -1096,16 +1141,7 @@
                     <div class="feedback" id="d23-drag-feedback"></div>
                 </div>
 
-                <div class="fillblank-container">
-                    <h3>✏️ Fill in the Blanks!</h3>
-                    <div class="fillblank-question">1. There are <input type="text" class="blank-input" id="d23-blank1">.</div>
-<div class="fillblank-question">2. A is higher <input type="text" class="blank-input" id="d23-blank2">.</div>
-<div class="fillblank-question">3. A uses rope <input type="text" class="blank-input" id="d23-blank3">.</div>
-<div class="fillblank-question">4. Lever turns around <input type="text" class="blank-input" id="d23-blank4">.</div>
-<div class="fillblank-question">5. A is thick <input type="text" class="blank-input" id="d23-blank5">.</div>
-                    <button class="quiz-button" onclick="checkD23FillBlanks()">✓ Check</button>
-                    <div class="feedback" id="d23-fillblank-feedback"></div>
-                </div>
+                
             </div>
             <button class="back-button bottom-back-button show" onclick="showHome()">⬅ Back Home</button>
         </div>
@@ -1113,9 +1149,48 @@
         <div id="d24" class="page">
             <div class="card" data-section="d24">
                 <h2>🏠 D2.4: Machines in Daily Life</h2>
-                <p class="clickable-audio">Simple machines are all around us every day!</p>
-                <p class="clickable-audio">Scissors cut. Door knobs turn. Ramps help!</p>
-                <p class="clickable-audio">They make our tasks easier and safer!</p>
+                <p class="clickable-audio">Simple machines are all around us every day! Let's see how we use them.</p>
+                
+                <h3>Simple Machines We Use</h3>
+                <div class="example-grid">
+                    <div class="example-card clickable-audio" style="border-color: var(--gear-orange);">
+                        <div class="icon">✂️</div>
+                        <h4>Scissors</h4>
+                        <p>Levers that cut!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--bolt-yellow);">
+                        <div class="icon">🚪</div>
+                        <h4>Door Knob</h4>
+                        <p>Wheel and axle!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--spring-green);">
+                        <div class="icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="10,80 70,10 75,15 15,85" fill="#4DA8DA" stroke="#2C3E50" stroke-width="2"/>
+                                <rect x="0" y="85" width="30" height="5" fill="#06A77D" stroke="#2C3E50" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h4>Wheelchair Ramp</h4>
+                        <p>Inclined plane!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--purple-pulley);">
+                        <div class="icon">🚩</div>
+                        <h4>Flagpole</h4>
+                        <p>Uses a pulley!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--sky-blue);">
+                        <div class="icon">🚲</div>
+                        <h4>Bicycle</h4>
+                        <p>Wheels and gears!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--tool-red);">
+                        <div class="icon">🔩</div>
+                        <h4>Jar Lid</h4>
+                        <p>A screw!</p>
+                    </div>
+                </div>
+                
+                <p class="clickable-audio">Scissors use <strong>levers</strong> to cut. Door knobs are <strong>wheels</strong> and axles. <strong>Ramps</strong> help people go up safely. <strong>Pulleys</strong> lift flags high. Simple machines make work <strong>easier</strong> for everyone!</p>
                 
                 <div class="quiz-container" id="d24-quiz">
                     <h3>🎯 Quiz Time!</h3>
@@ -1153,16 +1228,7 @@
                     <div class="feedback" id="d24-drag-feedback"></div>
                 </div>
 
-                <div class="fillblank-container">
-                    <h3>✏️ Fill in the Blanks!</h3>
-                    <div class="fillblank-question">1. Scissors use <input type="text" class="blank-input" id="d24-blank1">.</div>
-<div class="fillblank-question">2. Door knobs are <input type="text" class="blank-input" id="d24-blank2">.</div>
-<div class="fillblank-question">3. Ramps help <input type="text" class="blank-input" id="d24-blank3">.</div>
-<div class="fillblank-question">4. Pulleys lift <input type="text" class="blank-input" id="d24-blank4">.</div>
-<div class="fillblank-question">5. Simple machines make <input type="text" class="blank-input" id="d24-blank5">.</div>
-                    <button class="quiz-button" onclick="checkD24FillBlanks()">✓ Check</button>
-                    <div class="feedback" id="d24-fillblank-feedback"></div>
-                </div>
+                
             </div>
             <button class="back-button bottom-back-button show" onclick="showHome()">⬅ Back Home</button>
         </div>
@@ -1170,9 +1236,38 @@
         <div id="d25" class="page">
             <div class="card" data-section="d25">
                 <h2>💪 D2.5: Force Comparison</h2>
-                <p class="clickable-audio">Simple machines make work easier by reducing force needed!</p>
-                <p class="clickable-audio">A ramp needs less force than lifting straight up!</p>
-                <p class="clickable-audio">Pulleys, levers, and wheels all reduce the force we need!</p>
+                <p class="clickable-audio">Simple machines make work easier! They help us use <strong>less</strong> force to move things.</p>
+                
+                <h3>With vs Without Simple Machines</h3>
+                <div class="example-grid">
+                    <div class="example-card clickable-audio" style="border-color: var(--spring-green);">
+                        <div class="icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="10,80 70,10 75,15 15,85" fill="#4DA8DA" stroke="#2C3E50" stroke-width="2"/>
+                                <rect x="0" y="85" width="30" height="5" fill="#06A77D" stroke="#2C3E50" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h4>Using a Ramp</h4>
+                        <p>Easier! Less force needed!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--tool-red);">
+                        <div class="icon">⬆️</div>
+                        <h4>Lifting Straight Up</h4>
+                        <p>Harder! More force needed!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--spring-green);">
+                        <div class="icon">🔄</div>
+                        <h4>Using a Pulley</h4>
+                        <p>Easier to lift things!</p>
+                    </div>
+                    <div class="example-card clickable-audio" style="border-color: var(--tool-red);">
+                        <div class="icon">💪</div>
+                        <h4>No Machine</h4>
+                        <p>Much harder work!</p>
+                    </div>
+                </div>
+                
+                <p class="clickable-audio">A <strong>ramp</strong> or <strong>machine</strong> needs less force than lifting. Without machines it takes <strong>more</strong> force and is harder. A <strong>pulley</strong> or lever helps us lift easier. Machines make work <strong>easier</strong> and simpler!</p>
                 
                 <div class="quiz-container" id="d25-quiz">
                     <h3>🎯 Quiz Time!</h3>
@@ -1209,16 +1304,7 @@
                     <div class="feedback" id="d25-drag-feedback"></div>
                 </div>
 
-                <div class="fillblank-container">
-                    <h3>✏️ Fill in the Blanks!</h3>
-                    <div class="fillblank-question">1. Simple machines use <input type="text" class="blank-input" id="d25-blank1">.</div>
-<div class="fillblank-question">2. A needs less <input type="text" class="blank-input" id="d25-blank2">.</div>
-<div class="fillblank-question">3. Without machines takes <input type="text" class="blank-input" id="d25-blank3">.</div>
-<div class="fillblank-question">4. Pulleys help <input type="text" class="blank-input" id="d25-blank4">.</div>
-<div class="fillblank-question">5. Machines make work <input type="text" class="blank-input" id="d25-blank5">.</div>
-                    <button class="quiz-button" onclick="checkD25FillBlanks()">✓ Check</button>
-                    <div class="feedback" id="d25-fillblank-feedback"></div>
-                </div>
+                
             </div>
             <button class="back-button bottom-back-button show" onclick="showHome()">⬅ Back Home</button>
         </div>
@@ -1299,7 +1385,7 @@
             ],
             d25: [
                 { correct: 1 }, { correct: 0 }, { correct: 1 }, { correct: 2 }, { correct: 0 }
-            
+            ]
         };
 
         function selectOption(element, optionIndex) {
@@ -1435,92 +1521,10 @@
 
 
         // Fill-in-Blank answers
-        const blankAnswers = {
-            d11: {
-                'd11-blank1': ['work', 'Work', 'tasks', 'Tasks', 'jobs', 'Jobs'],
-                'd11-blank2': ['wheel', 'Wheel'],
-                'd11-blank3': ['Stairs', 'stairs', 'Ramps', 'ramps'],
-                'd11-blank4': ['pulleys', 'Pulleys', 'machines', 'Machines', 'levers', 'Levers'],
-                'd11-blank5': ['communities', 'Communities', 'places', 'Places', 'ways', 'Ways']
-            },
-            d12: {
-                'd12-blank1': ['energy', 'Energy', 'power', 'Power'],
-                'd12-blank2': ['Bikes', 'bikes', 'Bicycles', 'bicycles'],
-                'd12-blank3': ['pollution', 'Pollution', 'smoke', 'Smoke'],
-                'd12-blank4': ['recycle', 'Recycle', 'reuse', 'Reuse'],
-                'd12-blank5': ['choice', 'Choice', 'action', 'Action']
-            },
-            d21: {
-                'd21-blank1': ['forth', 'Forth'],
-                'd21-blank2': ['circle', 'Circle'],
-                'd21-blank3': ['elevator', 'Elevator'],
-                'd21-blank4': ['force', 'Force', 'push', 'Push', 'pull', 'Pull'],
-                'd21-blank5': ['zigzag', 'Zigzag']
-            },
-            d22: {
-                'd22-blank1': ['Pushing', 'pushing', 'Push', 'push'],
-                'd22-blank2': ['toward', 'Toward'],
-                'd22-blank3': ['Gravity', 'gravity'],
-                'd22-blank4': ['roll', 'Roll'],
-                'd22-blank5': ['position', 'Position']
-            },
-            d23: {
-                'd23-blank1': ['six', 'Six', '6'],
-                'd23-blank2': ['ramp', 'Ramp', 'inclined', 'Inclined'],
-                'd23-blank3': ['pulley', 'Pulley'],
-                'd23-blank4': ['fulcrum', 'Fulcrum'],
-                'd23-blank5': ['wedge', 'Wedge']
-            },
-            d24: {
-                'd24-blank1': ['lever', 'Lever', 'levers', 'Levers'],
-                'd24-blank2': ['wheel', 'Wheel', 'wheels', 'Wheels'],
-                'd24-blank3': ['ramp', 'Ramp', 'ramps', 'Ramps'],
-                'd24-blank4': ['pulley', 'Pulley', 'pulleys', 'Pulleys'],
-                'd24-blank5': ['easier', 'Easier', 'simple', 'Simple']
-            },
-            d25: {
-                'd25-blank1': ['less', 'Less', 'easier', 'Easier'],
-                'd25-blank2': ['ramp', 'Ramp', 'machine', 'Machine'],
-                'd25-blank3': ['more', 'More', 'harder', 'Harder'],
-                'd25-blank4': ['pulley', 'Pulley', 'lever', 'Lever'],
-                'd25-blank5': ['easier', 'Easier', 'simple', 'Simple']
-            
-        };
+        
 
-        function checkGenericFillBlanks(unitId) {
-            let correct = 0;
-            const total = 5;
-            const answers = blankAnswers[unitId];
-            
-            Object.keys(answers).forEach(blankId => {
-                const input = document.getElementById(blankId);
-                const userAnswer = input.value.trim();
-                
-                if (answers[blankId].includes(userAnswer)) {
-                    input.style.borderColor = '#6BCF7F';
-                    input.style.backgroundColor = '#D1FAE5';
-                    correct++;
-                } else {
-                    input.style.borderColor = '#EF476F';
-                    input.style.backgroundColor = '#FEE2E2';
-                }
-            });
-            
-            const feedback = document.getElementById(`${unitId}-fillblank-feedback`);
-            feedback.className = correct === total ? 'feedback correct show' : 'feedback incorrect show';
-            feedback.textContent = correct === total ? 
-                `🔧 Perfect! All ${total} correct!` :
-                `You got ${correct}/${total}. Green=right, red=wrong!`;
-        }
+        
 
-        function checkD11FillBlanks() { checkGenericFillBlanks('d11'); }
-        function checkD12FillBlanks() { checkGenericFillBlanks('d12'); }
-        function checkD21FillBlanks() { checkGenericFillBlanks('d21'); }
-        function checkD22FillBlanks() { checkGenericFillBlanks('d22'); }
-        function checkD23FillBlanks() { checkGenericFillBlanks('d23'); }
-        function checkD24FillBlanks() { checkGenericFillBlanks('d24'); }
-        function checkD25FillBlanks() { checkGenericFillBlanks('d25'); }
-
-    </script>
+                                                            </script>
 </body>
 </html>
